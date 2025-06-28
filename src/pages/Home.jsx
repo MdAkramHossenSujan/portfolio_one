@@ -5,11 +5,15 @@ import darkBg from '../assets/modern-background-with-lines.jpg';
 import { AuthContext } from '../context/AuthContext';
 import { div } from 'framer-motion/client';
 import AboutMe from '../components/AboutMe';
+import SkillSetSwitcher from '../components/Skills';
+import ProjectCard from '../components/ProjectCard';
+import { useLoaderData } from 'react-router';
 
 const Home = () => {
   const { theme } = useContext(AuthContext);
+  const projects=useLoaderData()
   const backgroundImage = theme === 'dark' ? darkBg : lightBg;
-
+console.log(projects)
   return (
     <div>
       <div
@@ -23,6 +27,12 @@ const Home = () => {
     </div>
     <div>
       <AboutMe/>
+    </div>
+    <div>
+      <SkillSetSwitcher/>
+    </div>
+    <div>
+      <ProjectCard projects={projects}/>
     </div>
     </div>
   );

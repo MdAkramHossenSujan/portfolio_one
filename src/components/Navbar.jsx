@@ -7,12 +7,12 @@ const Navbar = () => {
     const { theme, toggleTheme } = use(AuthContext)
     const navItems = <>
         <li><NavLink to={'/'}>Home</NavLink></li>
-        <li><NavLink to={'aboutme'}>About me</NavLink></li>
-        <li><NavLink>Projects</NavLink></li>
+        <li><a href='#aboutme'>About me</a></li>
+        <li><a href='#projects'>Projects</a></li>
         <li><NavLink>Contact</NavLink></li>
     </>
     return (
-        <div className="navbar fixed bg-base-100 px-6 lg:px-12 shadow-sm">
+        <div className="navbar fixed bg-base-100 z-10 px-6 lg:px-12 shadow-sm">
             <div className="navbar-start">
                 <div className="dropdown">
                     <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">

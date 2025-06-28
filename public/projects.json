@@ -1,0 +1,113 @@
+[
+  {
+    "id": 1,
+    "name": "SnackTrack Food Tracker",
+    "nickname": "Food Expiry Tracker",
+    "shortDescription": "The Food Expiry Tracker System is a full-stack web application designed to help users monitor food items and receive alerts before they expire, reducing food waste effectively.",
+    "info": {
+      "timeTaken": "3 weeks",
+      "technologies": [
+        "React",
+        "Vite",
+        "Tailwind CSS",
+        "React Router",
+        "Framer Motion",
+        "Express.js",
+        "MongoDB",
+        "Firebase Auth (JWT)",
+        "JWT",
+        "Axios"
+      ]
+    },
+    "featureDetails": {
+      "addItems": "Add new food items with quantity, unit, category, storage location, and expiry date",
+      "countdown": "Countdown timer in the Food Details page showing time left before expiry",
+      "trackInventory": "Track food inventory and expiry timeline",
+      "updateDelete": "Update and delete food entries",
+      "jwtAuth": "JWT Authentication with Firebase",
+      "locationStorage": "Location-based storage (e.g., Freezer, Fridge, Pantry)",
+      "notesSection": "Notes section for each food item with timestamp",
+      "responsiveUI": "Responsive and animated UI with Framer Motion",
+      "filterCategory": "Filter food by category",
+      "darkMode": "Dark Mode friendly",
+      "privateRoutes": "Private Routes for logged-in users"
+    },
+    "images": {
+      "imageone": "https://i.postimg.cc/4yLfznd9/Screenshot-2025-06-29-003239.png",
+      "imagetwo": "https://i.postimg.cc/CKGwcc5Y/Screenshot-2025-06-29-003419.png"
+    },
+    "liveLink": "https://snacktrack-food-tracker.web.app/",
+    "githubLink": "https://github.com/MdAkramHossenSujan/snackTrack_food_Tracker-client-side.git",
+     "githubServer":"https://github.com/MdAkramHossenSujan/snackTrack_food_Tracker-server-side.git"
+  },
+  {
+    "id": 2,
+    "name": "Roomatch – Roommate Finder Platform",
+    "nickname": "Roommate Finder",
+    "shortDescription": "Roomatch is a full-stack roommate matching platform allowing users to post listings, browse roommate profiles, and connect through likes and comments in a secure, modern interface.",
+    "info": {
+      "timeTaken": "4 weeks",
+      "technologies": [
+        "React",
+        "Tailwind CSS",
+        "MongoDB",
+        "Vite",
+        "React Router",
+        "Framer Motion",
+        "Express.js",
+        "MongoDB",
+        "Firebase Auth (JWT)"
+      ]
+    },
+    "featureDetails": {
+      "darkLightMode": "Dark/Light Mode with persistent styling",
+      "responsiveDesign": "Fully responsive design with collapsible sidebar",
+      "authentication": "Email/Password and Google Sign-In authentication",
+      "protectedRoutes": "Protected routes for logged-in users",
+      "crud": "CRUD functionality for roommate listings",
+      "likeSystem": "Like system for roommate posts with dynamic count",
+      "commentsSection": "Comments section for user interaction on details pages",
+      "homepageSections": "Homepage sections including Banner slider, About section with Lottie, Featured Cards, Recently Viewed, and How-to Guide",
+      "alertsNotifications": "Alerts and notifications with react-hot-toast and sweetalert",
+      "dynamicTitles": "Dynamic page titles based on routes",
+      "custom404": "Custom 404 error page"
+    },
+    "images": {
+      "imageone": "https://i.postimg.cc/ZqZcdqyH/Screenshot-2025-06-29-002025.png",
+      "imagetwo": "https://i.postimg.cc/Dwzskbst/Screenshot-2025-06-29-002913.png",
+      "imagethree": "https://i.postimg.cc/kgPN05wC/Screenshot-2025-06-29-002434.png"
+    },
+    "liveLink": "https://roomatch-roommate-finder.web.app/",
+    "githubLinkClient": "https://github.com/MdAkramHossenSujan/roomatch_roommate_Finder_client_site.git",
+    "githubServer":"https://github.com/MdAkramHossenSujan/roomatch_server_site.git"
+  },
+  {
+    "id": 3,
+    "name": "Plant SU – Indoor Plant Shop",
+    "nickname": "Plant Shop",
+    "shortDescription": "Plant SU is a modern, responsive indoor plant shop designed to help users bring nature into their home effortlessly, featuring a curated plant collection, reviews, and smooth delivery.",
+    "info": {
+      "timeTaken": "2 weeks",
+      "technologies": [
+        "React.js",
+        "Tailwind CSS",
+        "Surge.sh"
+      ]
+    },
+    "featureDetails": {
+      "responsiveDesign": "Fully mobile-friendly layout using Tailwind CSS for a modern look",
+      "indoorPlantCollection": "Browse a variety of indoor plants suitable for different living spaces",
+      "userReviews": "Real feedback from customers to help choose the right plant",
+      "fastDelivery": "Fast and reliable delivery ensuring fresh and healthy plants",
+      "easyNavigation": "Intuitive interface for smooth browsing and shopping experience"
+    },
+    "images": {
+      "imageone": "https://i.postimg.cc/mZ1hMWW1/Screenshot-2025-06-29-011304.png",
+      "imagetwo": "https://i.postimg.cc/vBg8Wfkw/Screenshot-2025-06-29-011339.png"
+    },
+    "liveLink": "http://plant-su.surge.sh/",
+    "githubLink": "https://github.com/MdAkramHossenSujan/plant-website.git",
+    "githubLinkClient": "https://github.com/MdAkramHossenSujan/plant-website.git",
+    "githubServer": "https://github.com/MdAkramHossenSujan/plant-website.git"
+  }
+]
