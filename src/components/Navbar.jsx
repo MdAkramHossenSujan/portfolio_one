@@ -6,8 +6,8 @@ import { NavLink } from 'react-router';
 const Navbar = () => {
     const { theme, toggleTheme } = use(AuthContext)
     const navItems = <>
-        <li><NavLink>Home</NavLink></li>
-        <li><NavLink>About me</NavLink></li>
+        <li><NavLink to={'/'}>Home</NavLink></li>
+        <li><NavLink to={'aboutme'}>About me</NavLink></li>
         <li><NavLink>Projects</NavLink></li>
         <li><NavLink>Contact</NavLink></li>
     </>

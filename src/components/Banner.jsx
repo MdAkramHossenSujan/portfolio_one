@@ -4,15 +4,15 @@ import { FaGithub, FaInstagram, FaLinkedin, FaTwitter } from 'react-icons/fa';
 
 const Banner = () => {
   return (
-    <div className="flex flex-col-reverse lg:flex-row items-center justify-center min-h-screen lg:px-12 px-6 py-3 lg:py-8">
+    <div className="flex flex-col-reverse lg:flex-row items-center justify-center min-h-screen lg:min-h-[84vh] lg:px-12 px-6 py-3 lg:py-8">
       {/* Left side - Text */}
-      <div className="flex-1 flex justify-center text-center lg:pl-6 lg:text-left mt-3">
-        <div className="max-w-2xl">
+      <div className="flex-1 flex justify-center text-center lg:pl-12 xl:pl-24 lg:text-left mt-3">
+        <div className="max-w-4xl">
           {/* Small intro */}
           <p className="text-sm md:text-lg lg:text-xl xl:text-2xl font-medium text-slate-500 dark:text-slate-100 mb-2">
             Hello, It&apos;s Me, <span className="text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-extrabold text-slate-900 dark:text-white mb-2">
-          Sujan
-          </span>
+              Sujan
+            </span>
           </p>
 
           {/* Role with highlight */}
