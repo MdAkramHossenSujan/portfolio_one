@@ -7,7 +7,7 @@ const Banner = () => {
     <div className="flex flex-col-reverse lg:flex-row items-center justify-center min-h-screen lg:min-h-[84vh] lg:px-12 px-6 py-6 lg:py-8">
       {/* Left side - Text */}
       <div className="flex-1 flex justify-center text-center lg:pl-12 xl:pl-24 lg:text-left mt-3">
-        <div className="max-w-4xl">
+        <div className="lg:max-w-4xl max-w-3xl">
           {/* Small intro */}
           <p className="text-sm md:text-lg lg:text-xl xl:text-2xl font-medium text-slate-500 dark:text-slate-100 mb-2">
             Hello, It&apos;s Me, <span className="text-3xl font-mono md:text-4xl lg:text-5xl xl:text-6xl font-extrabold text-slate-900 dark:text-white mb-2">
@@ -19,13 +19,13 @@ const Banner = () => {
           <h2 className="text-sm md:text-xl lg:text-2xl xl:text-3xl font-bold text-slate-700 dark:text-slate-200 lg:mb-2">
             And I&apos;m a{' '}
             <span className="text-cyan-600 font-mono text-lg md:text-3xl lg:text-4xl xl:text-5xl dark:text-cyan-400">
-              MERN Stack Developer
+              MERN Stack Developer,
             </span>
           </h2>
 
           {/* Short description */}
           <p className="text-sm md:text-base xl:text-xl text-slate-500 dark:text-slate-300 mb-6 lg:mb-8">
-            I’m a passionate MERN stack developer who loves building modern web
+             who loves building modern web
             applications with React, Node.js, and MongoDB. Currently expanding my
             backend expertise and looking for exciting projects!
           </p>
