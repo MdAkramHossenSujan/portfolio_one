@@ -29,7 +29,7 @@ const Contact = () => {
     e.preventDefault();
     const formData = new FormData(e.target);
     const data = Object.fromEntries(formData.entries());
-
+console.log(data)
     emailjs
       .send(
         serviceId,
@@ -38,6 +38,7 @@ const Contact = () => {
           from_name: data.name,
           from_email: data.email,
           message: data.message,
+          title:data.title,
           time: new Date().toLocaleString(),
         },
         publicKey
