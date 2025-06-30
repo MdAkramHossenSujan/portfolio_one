@@ -2,7 +2,7 @@ import React, { use, useState } from 'react';
 import { AuthContext } from '../context/AuthContext';
 import { Menu, Moon, Sun } from 'lucide-react';
 import { Link, NavLink } from 'react-router';
-
+import logo from '../assets/Black White Simple Initials Logo.png'
 const Navbar = () => {
     const { theme, toggleTheme } = use(AuthContext)
     const [open, setOpen] = useState(false);
@@ -35,7 +35,7 @@ const Navbar = () => {
 
                     {/* DaisyUI dropdown content as fullscreen overlay */}
                     <div
-                    onClick={closeDropdown}
+                        onClick={closeDropdown}
                         className={`
           fixed top-16 left-0 w-screen
           bg-base-100 z-50
@@ -51,7 +51,10 @@ const Navbar = () => {
                         </ul>
                     </div>
                 </div>
-                <Link className="text-2xl lg:text-4xl">TechCrafter</Link>
+                <div className='flex gap-1'>
+                    <img className="md:h-12 md:w-12 h-10 w-10 mr-1 p-1 border rounded-full dark:border-cyan-400" src={logo} alt="" />                  
+                    <Link className="text-2xl my-auto md:text-3xl lg:text-4xl">TechCrafter</Link>
+                </div>
             </div>
             <div className="navbar-center hidden lg:flex">
                 <ul className="menu text-[16px] font-bold menu-horizontal px-1">

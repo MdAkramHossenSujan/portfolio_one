@@ -29,7 +29,7 @@ const ScrollToTopButton =()=> {
     <button
       onClick={scrollToTop}
       className="
-        fixed cursor-pointer right-4 md:right-8 lg:right-12 xl:right-16 bottom-10
+        fixed cursor-pointer right-8 md:right-8 lg:right-12 xl:right-16 bottom-10
         z-50
          border-gray-600 bg-base-300 border
         dark:bg-cyan-500 text-gray-900
