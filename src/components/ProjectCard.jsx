@@ -63,7 +63,7 @@ const normalizeTech = (tech) =>
 
 const ProjectCard = ({ projects }) => {
   return (
-    <section id='projects' className="py-16 scroll-mt-18 transition-colors duration-500">
+    <section id='projects' className="py-10 scroll-mt-18 transition-colors duration-500">
       <div className="max-w-[1540px] mx-auto px-6 md:px-10">
         <h2 className="text-green-600 dark:text-green-400 text-lg mb-2">● Projects</h2>
         <h1 className="text-3xl md:text-4xl xl:text-5xl font-bold mb-10 font-mono">My Recent Works</h1>

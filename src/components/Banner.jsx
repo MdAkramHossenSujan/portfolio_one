@@ -33,7 +33,7 @@ const Banner = () => {
           {/* Social icons */}
           <div className="flex justify-center lg:justify-start gap-4 mb-4 lg:mb-8 flex-wrap">
             <a
-              href="#"
+              href="https://x.com/mdahsujan"
               className="
                 border border-cyan-600 dark:border-cyan-400
                 text-cyan-600 dark:text-cyan-400
@@ -48,7 +48,7 @@ const Banner = () => {
               <FaTwitter className="w-5 h-5" />
             </a>
             <a
-              href="#"
+              href="https://github.com/MdAkramHossenSujan"
               className="
                 border border-cyan-600 dark:border-cyan-400
                 text-cyan-600 dark:text-cyan-400
@@ -63,22 +63,7 @@ const Banner = () => {
               <FaGithub className="w-5 h-5" />
             </a>
             <a
-              href="#"
-              className="
-                border border-cyan-600 dark:border-cyan-400
-                text-cyan-600 dark:text-cyan-400
-                hover:bg-cyan-500 dark:hover:bg-cyan-300
-                hover:text-white
-                rounded-full
-                p-3
-                transition-all
-                duration-300
-              "
-            >
-              <FaInstagram className="w-5 h-5" />
-            </a>
-            <a
-              href="#"
+              href="https://www.linkedin.com/in/akram-hossen-29872a30a/"
               className="
                 border border-cyan-600 dark:border-cyan-400
                 text-cyan-600 dark:text-cyan-400
@@ -97,8 +82,7 @@ const Banner = () => {
           {/* Download CV Button */}
           <div>
             <a
-              href="../assets/_final_Lab_2.pdf"
-              download
+              onClick={()=>alert('Resume will be added soon')}
               className="
                 inline-block
                 px-8 py-3
@@ -121,7 +105,7 @@ const Banner = () => {
                 dark:shadow-teal-400
               "
             >
-              Download CV
+              Download Resume
             </a>
           </div>
         </div>
