@@ -8,6 +8,8 @@ import AboutMe from '../components/AboutMe';
 import SkillSetSwitcher from '../components/Skills';
 import ProjectCard from '../components/ProjectCard';
 import { useLoaderData } from 'react-router';
+import Contact from '../components/Contact';
+import ScrollToTopButton from '../components/ScrollToTopButton';
 
 const Home = () => {
   const { theme } = useContext(AuthContext);
@@ -25,6 +27,7 @@ console.log(projects)
       <Banner />
       
     </div>
+    <ScrollToTopButton/>
     <div>
       <AboutMe/>
     </div>
@@ -33,6 +36,9 @@ console.log(projects)
     </div>
     <div>
       <ProjectCard projects={projects}/>
+    </div>
+    <div>
+      <Contact></Contact>
     </div>
     </div>
   );

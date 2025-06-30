@@ -32,7 +32,7 @@ const SkillSetSwitcher = () => {
 
     return (
         <div className="transition-colors duration-300 py-10 max-w-[1560px] mx-auto">
-            <h2 className="text-5xl mr-4 font-bold text-center text-cyan-600 dark:text-cyan-400 font-mono mb-8">Skill-Set</h2>
+            <h2 className="xl:text-5xl md:text-4xl text-3xl mr-4 font-bold text-center font-mono mb-8">Skill-Set</h2>
 
             <div className="mb-8">
                 <div className="flex flex-row mx-auto w-52 items-center space-x-4">
