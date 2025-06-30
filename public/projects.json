@@ -3,7 +3,7 @@
     "id": 1,
     "name": "SnackTrack Food Tracker",
     "nickname": "Food Expiry Tracker",
-    "shortDescription": "The Food Expiry Tracker System is a full-stack web application designed to help users monitor food items and receive alerts before they expire, reducing food waste effectively.",
+    "shortDescription": "The Food Expiry Tracker System is a full-stack web application designed to help users monitor food items and receive the expiry state, reducing food waste effectively.",
     "info": {
       "timeTaken": "3 weeks",
       "technologies": [
@@ -44,7 +44,7 @@
     "id": 2,
     "name": "Roomatch – Roommate Finder Platform",
     "nickname": "Roommate Finder",
-    "shortDescription": "Roomatch is a full-stack roommate matching platform allowing users to post listings, browse roommate profiles, and connect through likes and comments in a secure, modern interface.",
+    "shortDescription": "Roomatch is a full-stack roommate matching platform allowing users to post listings, browse roommate profiles, and connect through blogs and comments in a secure, modern interface.",
     "info": {
       "timeTaken": "4 weeks",
       "technologies": [
