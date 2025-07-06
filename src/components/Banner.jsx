@@ -1,6 +1,7 @@
 import React from 'react';
 import myImage from '../assets/Untitled-2.png';
 import { FaGithub, FaInstagram, FaLinkedin, FaTwitter } from 'react-icons/fa';
+import { Link } from 'react-router';
 
 const Banner = () => {
   return (
@@ -81,8 +82,7 @@ const Banner = () => {
 
           {/* Download CV Button */}
           <div>
-            <a
-              onClick={()=>alert('Resume will be added soon')}
+            <Link to={'https://drive.google.com/file/d/1n1rf5dk6C3Th5W4TA1EtxFyPuPbgvnHx/view?usp=sharing'} target='_blank'
               className="
                 inline-block
                 px-8 py-3
@@ -105,8 +105,8 @@ const Banner = () => {
                 dark:shadow-teal-400
               "
             >
-              Download Resume
-            </a>
+            Resume
+            </Link>
           </div>
         </div>
       </div>

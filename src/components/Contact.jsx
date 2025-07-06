@@ -38,7 +38,6 @@ console.log(data)
           from_name: data.name,
           from_email: data.email,
           message: data.message,
-          title:data.title,
           time: new Date().toLocaleString(),
         },
         publicKey

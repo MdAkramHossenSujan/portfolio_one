@@ -1,6 +1,11 @@
 import React, { useEffect, useState } from 'react';
 import { motion } from 'framer-motion';
 import { useLoaderData, useParams } from 'react-router';
+import { Swiper, SwiperSlide } from 'swiper/react';
+import { Navigation, Pagination, Autoplay } from 'swiper/modules';
+import 'swiper/css';
+import 'swiper/css/navigation';
+import 'swiper/css/pagination';
 import {
   FaReact,
   FaHtml5,
@@ -91,20 +96,25 @@ const ProjectDetails = () => {
       <div className="max-w-[1540px] mx-auto space-y-10 font-mono">
 
         {/* Images */}
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
+        <Swiper
+          modules={[Navigation, Pagination, Autoplay]}
+          slidesPerView={1}
+          spaceBetween={20}
+          pagination={{ clickable: true }}
+          autoplay={{ delay: 3000, disableOnInteraction: false }}
+          loop
+          className="rounded-xl"
+        >
           {(project.images ? Object.values(project.images) : []).map((img, i) => (
-            <motion.img
-              key={i}
-              src={img}
-              alt={`${project.name} screenshot ${i + 1}`}
-              className="rounded-xl shadow-md object-cover w-full h-auto hover:scale-105 transition-transform duration-500"
-              initial={{ opacity: 0, y: 30 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.6, delay: i * 0.1 }}
-            />
+            <SwiperSlide key={i}>
+              <img
+                src={img}
+                alt={`${project.name} screenshot ${i + 1}`}
+                className="rounded-xl shadow-md object-cover w-full h-auto hover:scale-105 transition-transform duration-500"
+              />
+            </SwiperSlide>
           ))}
-        </div>
+        </Swiper>
 
         {/* Title & Description */}
         <div className="space-y-4">
