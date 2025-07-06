@@ -10,6 +10,7 @@ import ProjectCard from '../components/ProjectCard';
 import { useLoaderData } from 'react-router';
 import Contact from '../components/Contact';
 import ScrollToTopButton from '../components/ScrollToTopButton';
+import GithubContribution from '../components/GithubContribution';
 
 const Home = () => {
   const { theme } = useContext(AuthContext);
@@ -36,6 +37,9 @@ console.log(projects)
     </div>
     <div>
       <ProjectCard projects={projects}/>
+    </div>
+    <div>
+      <GithubContribution/>
     </div>
     <div>
       <Contact></Contact>
