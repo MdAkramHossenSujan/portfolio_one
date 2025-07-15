@@ -81,8 +81,8 @@ const Banner = () => {
           </div>
 
           {/* Download CV Button */}
-          <div>
-            <Link to={'https://drive.google.com/file/d/1n1rf5dk6C3Th5W4TA1EtxFyPuPbgvnHx/view?usp=sharing'} target='_blank'
+          <div className='flex gap-4 justify-center lg:justify-start'>
+            <Link to={'https://drive.google.com/file/d/1T2JIBMEU1iK1TbCkpPY9RkJbT2ufFAcO/view?usp=sharing'} target='_blank'
               className="
                 inline-block
                 px-8 py-3
@@ -106,6 +106,31 @@ const Banner = () => {
               "
             >
             Resume
+            </Link>
+            <Link to={'https://drive.google.com/file/d/17aVyHuwXBi7qdblK0DOiWtLsArob86v-/view?usp=sharing'} target='_blank'
+              className="
+                inline-block
+                px-8 py-3
+                rounded-full
+                text-cyan-900
+                bg-gradient-to-r
+                from-cyan-300
+                to-cyan-500
+                hover:from-cyan-300
+                hover:to-cyan-500
+                dark:text-white
+                dark:from-cyan-400
+                dark:to-cyan-600
+                dark:hover:from-cyan-500
+                dark:hover:to-cyan-700
+                font-semibold
+                transition-all
+                shadow-md
+                shadow-teal-200
+                dark:shadow-teal-400
+              "
+            >
+            CV
             </Link>
           </div>
         </div>
