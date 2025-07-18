@@ -12,12 +12,14 @@ import emailjs from "emailjs-com";
 import toast from "react-hot-toast";
 
 const Contact = () => {
+  //State for copying mail to clipboard
   const [copied, setCopied] = useState(false);
-
+  //Environment variables for emailjs
   const serviceId = import.meta.env.VITE_EMAILJS_SERVICE_ID;
   const templateId = import.meta.env.VITE_EMAILJS_TEMPLATE_ID;
   const publicKey = import.meta.env.VITE_EMAILJS_PUBLIC_KEY;
 
+  //Function to copy email to clipboard
   const handleCopyEmail = () => {
     navigator.clipboard.writeText("mdsujan.dev@gmail.com");
     setCopied(true);
@@ -25,15 +27,13 @@ const Contact = () => {
     setTimeout(() => setCopied(false), 2000);
   };
 
+  //Function to submit the form
   const handleSubmit = (e) => {
     e.preventDefault();
     const formData = new FormData(e.target);
     const data = Object.fromEntries(formData.entries());
-console.log(data)
-    emailjs
-      .send(
-        serviceId,
-        templateId,
+    //Send the email from form data
+    emailjs.send(serviceId,templateId,
         {
           from_name: data.name,
           from_email: data.email,
@@ -47,15 +47,17 @@ console.log(data)
           toast.success(
             "Thank you for reaching out! Your message has been sent successfully."
           );
+          //reset the form after sending
           e.target.reset();
         },
         (error) => {
           console.error(error);
+          //If anything goes wrong, show error toast
           toast.error("Something went wrong. Please try again.");
         }
       );
   };
-
+  //Return the contact component
   return (
     <div id="contact" className="py-10 flex items-center justify-center px-6 md:px-8">
       <div className="grid md:grid-cols-2 gap-10 w-full max-w-[1440px]">
@@ -71,7 +73,7 @@ console.log(data)
           </h2>
 
           <p className="text-lg">GET IN TOUCH</p>
-
+{/*Email display and copy option */}
           <div
             className="flex items-center gap-3 "
            
@@ -86,7 +88,7 @@ console.log(data)
               </span>
             )}
           </div>
-
+          {/*Social media links*/}
           <div className="flex gap-5 mt-4 text-2xl">
             <a
               href="https://www.linkedin.com/in/akram-hossen-29872a30a/"
@@ -130,7 +132,7 @@ console.log(data)
           <p className="font-semibold dark:text-gray-300 dark:font-mono text-gray-700 text-2xl lg:text-3xl xl:text-4xl">
             Send me a message
           </p>
-
+          {/*Title input*/}
           <div>
             <label className="label">
               <span className="label-text">Title</span>
@@ -142,7 +144,7 @@ console.log(data)
               className="input input-bordered dark:border-cyan-500 bg-base-200 rounded-xl border-gray-500 w-full"
             />
           </div>
-
+          {/*Name input*/}
           <div>
             <label className="label">
               <span className="label-text">Your Name</span>
@@ -154,7 +156,7 @@ console.log(data)
               className="input input-bordered dark:border-cyan-500 bg-base-200 rounded-xl border-gray-500 w-full"
             />
           </div>
-
+          {/*Email input*/}
           <div>
             <label className="label">
               <span className="label-text">Your Email</span>
@@ -166,7 +168,7 @@ console.log(data)
               className="input input-bordered dark:border-cyan-500 bg-base-200 rounded-xl border-gray-500 w-full"
             />
           </div>
-
+          {/*Message input*/}
           <div>
             <label className="label">
               <span className="label-text">Message</span>
@@ -178,7 +180,7 @@ console.log(data)
               className="textarea bg-base-200 rounded-xl border-gray-500 dark:border-cyan-500 textarea-bordered w-full"
             ></textarea>
           </div>
-
+          {/*Submit button*/}
           <motion.button
             type="submit"
             whileHover={{
