@@ -80,9 +80,9 @@ const Banner = () => {
             </a>
           </div>
 
-          {/* Download CV Button */}
+          {/* Download CV & Resume Button */}
           <div className='flex gap-4 justify-center lg:justify-start'>
-            <Link to={'https://drive.google.com/file/d/1T2JIBMEU1iK1TbCkpPY9RkJbT2ufFAcO/view?usp=sharing'} target='_blank'
+            <Link to={'https://drive.google.com/file/d/186B1AL6I4UIip16fd5a51-b4CXMxJg-Y/view?usp=sharing'} target='_blank'
               className="
                 inline-block
                 px-8 py-3
