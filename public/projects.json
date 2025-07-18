@@ -1,6 +1,61 @@
 [
   {
     "id": 1,
+    "name": "PulsePlay Sports Club Manager",
+    "nickname": "Sports Club Management System",
+    "shortDescription": "PulsePlay is a full-stack Sports Club Management System that streamlines court bookings, membership approvals, payments, and admin tasks with a modern UI and role-based dashboards.",
+    "info": {
+      "timeTaken": "2 weeks",
+      "technologies": [
+        "React",
+        "Vite",
+        "Tailwind CSS",
+        "DaisyUI",
+        "Framer Motion",
+        "React Router",
+        "TanStack Query",
+        "MongoDB",
+        "Express.js",
+        "Stripe API",
+        "Firebase",
+        "Axios",
+        "JWT",
+        "React Leaflet",
+        "Lottie"
+      ]
+    },
+   "featureDetails": {
+    "roleBasedDashboard": "Separate dashboards and permissions for Users, Members, and Admins",
+    "bookingSystem": "Book courts with date and time slot selection, dynamic price calculation, and cancellation support",
+    "stripePayment": "Secure Stripe integration with card payments, coupon discounts, and confirmation modals",
+    "adminManagement": "Full CRUD for courts, bookings, users, coupons, and announcements with search and filter",
+    "realTimeNotification": "Live notifications for booking approvals, rejections, payments, and announcements",
+    "dataVisualization": "Visual charts for revenue and booking insights to aid admin decision-making",
+    "modernUI": "Responsive, animated UI with Framer Motion and mobile-friendly design",
+    "profileManagement": "Users can manage their personal profile including photo uploads",
+    "announcementBoard": "Club-wide announcements visible to users and targeted member updates",
+    "memberAccess": "Members get special badge and access to exclusive features and booking options",
+    "bookingStatusTracking": "Track bookings by status: pending, approved, rejected, and confirmed",
+    "searchFilter": "Search and filter courts, users, and bookings efficiently",
+    "secureRoutes": "Protected routes using JWT and Firebase authentication",
+    "couponSystem": "Admins can create and manage discount coupons for payments",
+    "mapIntegration": "Interactive court discovery via React Leaflet map integration",
+    "darkModeFriendly": "Dark mode compatible UI for enhanced accessibility"
+  },
+    "images": {
+      "imageone": "https://i.postimg.cc/Yqz6Y31q/Screenshot-2025-07-19-004544.png",
+      "imagetwo": "https://i.postimg.cc/Wz6kmNqf/Screenshot-2025-07-19-004558.png",
+      "imagethree": "https://i.postimg.cc/prZmhs3w/Screenshot-2025-07-19-004637.png",
+      "imagefour": "https://i.postimg.cc/2jwyxXXJ/Screenshot-2025-07-19-004750.png",
+      "imagefive": "https://i.postimg.cc/50m4n6pv/Screenshot-2025-07-19-004846.png",
+      "imagesix": "https://i.postimg.cc/VvGYPpxk/Screenshot-2025-07-19-005015.png"
+    },
+    "liveLink": "https://pulseplay-65454.firebaseapp.com/",
+    "githubLink": "https://github.com/MdAkramHossenSujan/Pulseplay_Sports-Club-Management-System_Client_Side.git",
+    "githubServer": "https://github.com/MdAkramHossenSujan/Pulseplay_Sports-Club-Management-System_Server_Side.git"
+  },
+  {
+    "id": 2,
     "name": "SnackTrack Food Tracker",
     "nickname": "Food Expiry Tracker",
     "shortDescription": "The Food Expiry Tracker System is a full-stack web application designed to help users monitor food items and receive the expiry state, reducing food waste effectively.",
@@ -41,7 +96,7 @@
      "githubServer":"https://github.com/MdAkramHossenSujan/snackTrack_food_Tracker-server-side.git"
   },
   {
-    "id": 2,
+    "id": 3,
     "name": "Roomatch – Roommate Finder Platform",
     "nickname": "Roommate Finder",
     "shortDescription": "Roomatch is a full-stack roommate matching platform allowing users to post listings, browse roommate profiles, and connect through blogs and comments in a secure, modern interface.",
@@ -82,7 +137,7 @@
     "githubServer":"https://github.com/MdAkramHossenSujan/roomatch_server_site.git"
   },
   {
-    "id": 3,
+    "id": 4,
     "name": "Plant SU – Indoor Plant Shop",
     "nickname": "Plant Shop",
     "shortDescription": "Plant SU is a modern, responsive indoor plant shop designed to help users bring nature into their home effortlessly, featuring a curated plant collection, reviews, and smooth delivery.",
