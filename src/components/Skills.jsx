@@ -3,7 +3,7 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { FaGithub, FaReact, FaNodeJs, FaDatabase, FaJs, FaLock, FaBolt, FaCloud, FaCodeBranch, FaBoxOpen } from 'react-icons/fa';
 import { SiTailwindcss, SiMongodb, SiFirebase, SiAxios } from 'react-icons/si';
 import { Tooltip } from 'react-tooltip';
-
+//Skill taken properly as array to insert dynamic sata
 const frontendSkills = [
   {
     icon: <FaReact size={32} />,
@@ -78,13 +78,15 @@ const otherSkills = [
 
 
 const SkillSetSwitcher = () => {
+  //To set active set used usestate and set frontend as primary display.
     const [activeSet, setActiveSet] = useState('frontend');
-
+    //To set skills based on active set
     let skills = [];
+    //If active set is frontend, set skills to frontendSkills
     if (activeSet === 'frontend') skills = frontendSkills;
     else if (activeSet === 'backend') skills = backendSkills;
     else if (activeSet === 'others') skills = otherSkills;
-
+    //Return the skill set switcher component
     return (
         <div id='skills' className="transition-colors scroll-mt-20 duration-300 py-10 max-w-[1560px] mx-auto">
             <h2 className="xl:text-5xl md:text-4xl text-3xl mr-4 font-bold text-center font-mono mb-8">Skill-Set</h2>
