@@ -59,10 +59,15 @@ const techIcons = {
 
 // Normalizer function
 const normalizeTech = (tech) =>
+  //Removes the .js at the end of the string.
+  //Removes all hyphens (-), underscores (_), and whitespace characters (\s) from the string.
+  //Converts the final string to all lowercase letters.
   tech.replace(/\.js$/i, '').replace(/[-_\s]/g, '').toLowerCase();
 
 const ProjectCard = ({ projects }) => {
+  //Return the project card component
   return (
+    //Section for projects
     <section id='projects' className="py-10 scroll-mt-18 transition-colors duration-500">
       <div className="max-w-[1540px] mx-auto px-6 md:px-13">
         <h2 className="text-green-600 dark:text-green-400 text-lg mb-2">● Projects</h2>

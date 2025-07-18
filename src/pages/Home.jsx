@@ -13,10 +13,12 @@ import ScrollToTopButton from '../components/ScrollToTopButton';
 import GithubContribution from '../components/GithubContribution';
 
 const Home = () => {
+  //Theme toggling form authcontext
   const { theme } = useContext(AuthContext);
+  //Projects data from projects.json using loader
   const projects=useLoaderData()
+  //Background image based on theme
   const backgroundImage = theme === 'dark' ? darkBg : lightBg;
-console.log(projects)
   return (
     <div>
       <div
