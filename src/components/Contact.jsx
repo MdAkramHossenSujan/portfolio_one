@@ -60,7 +60,7 @@ const Contact = () => {
   //Return the contact component
   return (
     <div id="contact" className="py-10 flex items-center justify-center px-6 md:px-8">
-      <div className="grid md:grid-cols-2 gap-10 w-full max-w-[1440px]">
+      <div className="grid md:grid-cols-2 gap-10 w-full max-w-[1540px]">
         {/* LEFT SIDE */}
         <motion.div
           initial={{ opacity: 0, x: -50 }}
@@ -68,7 +68,7 @@ const Contact = () => {
           transition={{ duration: 1 }}
           className="space-y-6"
         >
-          <h2 className="text-3xl md:text-4xl xl:text-5xl font-bold dark:font-mono bg-gradient-to-r from-gray-800 to-gray-500 dark:from-cyan-500 dark:to-blue-500 text-transparent bg-clip-text">
+          <h2 className="text-3xl md:text-4xl xl:text-5xl font-bold font-mono bg-gradient-to-r from-gray-800 to-gray-500 dark:from-cyan-500 dark:to-blue-500 text-transparent bg-clip-text">
             DO YOU HAVE A PROJECT TO DISCUSS?
           </h2>
 

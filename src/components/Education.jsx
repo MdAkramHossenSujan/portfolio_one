@@ -39,7 +39,7 @@ const Education = () => {
               className="flex flex-col items-center p-6 rounded-xl hover:shadow-lg transition duration-300"
             >
               {/* Circular Logo */}
-              <div className="w-28 h-28 rounded-full overflow-hidden border-4  text-cyan-600 dark:text-cyan-400 shadow-lg">
+              <div className="w-28 h-28 shadow-md shadow-cyan-300 dark:shadow-cyan-500 hover:shadow-md hover:scale-[1.02] rounded-full overflow-hidden border-4  text-cyan-600 dark:text-cyan-400">
                 <img
                   src={edu.img}
                   alt={edu.institution}

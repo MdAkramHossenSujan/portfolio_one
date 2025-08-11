@@ -5,15 +5,15 @@ const GithubContribution = () => {
   //Return the github contribution component
   return (
     //Section for github contribution
-    <section className="py-8 px-4 md:px-8 min-h-[400px] flex flex-col items-center">
+    <section className="py-8 px-4 md:px-8  max-w-[1540px] min-h-[400px] mx-auto">
       <div>
         {/*Title*/}
-      <h2 className="text-4xl xl:text-5xl font-semibold mb-8 text-gray-700 dark:text-gray-300 text-start">
+      <h2 className="text-4xl xl:text-5xl font-semibold mb-8 font-mono">
         My GitHub Contributions
       </h2>
       </div>
       {/*GitHubCalendar component*/}
-      <div className="w-full max-w-[1440px]">
+      <div>
         {/*GitHubCalendar component*/}
         <GitHubCalendar
           username="MdAkramHossenSujan"
