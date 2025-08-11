@@ -24,10 +24,10 @@ const Education = () => {
       className="py-12 transition-colors duration-300"
       id="education"
     >
-      <div className="max-w-[1440px] mx-auto md:px-12 px-8">
+      <div className="max-w-[1540px] mx-auto md:px-12 px-8">
         {/* Title */}
-        <h2 className="text-3xl font-bold text-gray-800 dark:text-white mb-8 flex items-center gap-2">
-          <FaGraduationCap className="text-indigo-600 dark:text-indigo-400" />
+        <h2 className="text-3xl xl:text-5xl font-mono font-bold text-gray-800 dark:text-white mb-8 flex items-center gap-2">
+          <FaGraduationCap className="text-green-600 dark:text-green-500" />
           Education
         </h2>
 
@@ -39,7 +39,7 @@ const Education = () => {
               className="flex flex-col items-center p-6 rounded-xl hover:shadow-lg transition duration-300"
             >
               {/* Circular Logo */}
-              <div className="w-28 h-28 rounded-full overflow-hidden border-4 border-indigo-100 dark:border-indigo-500 shadow-lg">
+              <div className="w-28 h-28 rounded-full overflow-hidden border-4  text-cyan-600 dark:text-cyan-400 shadow-lg">
                 <img
                   src={edu.img}
                   alt={edu.institution}
@@ -56,7 +56,7 @@ const Education = () => {
                   {edu.institution}
                 </p>
                 <p className="text-gray-500 dark:text-gray-400 flex items-center justify-center gap-2 mt-1">
-                  <FaCalendarAlt className="text-indigo-500 dark:text-indigo-400" />
+                  <FaCalendarAlt className=" text-cyan-600 dark:text-cyan-400" />
                   {edu.duration}
                 </p>
               </div>
