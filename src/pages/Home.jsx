@@ -11,6 +11,7 @@ import { useLoaderData } from 'react-router';
 import Contact from '../components/Contact';
 import ScrollToTopButton from '../components/ScrollToTopButton';
 import GithubContribution from '../components/GithubContribution';
+import Education from '../components/Education';
 
 const Home = () => {
   //Theme toggling form authcontext
@@ -36,6 +37,9 @@ const Home = () => {
     </div>
     <div>
       <SkillSetSwitcher/>
+    </div>
+    <div>
+      <Education/>
     </div>
     <div>
       <ProjectCard projects={projects}/>
