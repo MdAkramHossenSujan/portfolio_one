@@ -100,7 +100,6 @@ const ProjectDetails = () => {
           modules={[Navigation, Pagination, Autoplay]}
           slidesPerView={1}
           spaceBetween={20}
-          pagination={{ clickable: true }}
           autoplay={{ delay: 3000, disableOnInteraction: false }}
           loop
           className="rounded-xl"
@@ -110,7 +109,7 @@ const ProjectDetails = () => {
               <img
                 src={img}
                 alt={`${project.name} screenshot ${i + 1}`}
-                className="rounded-xl shadow-md object-cover w-full h-auto hover:scale-105 transition-transform duration-500"
+                className="rounded-xl object-cover w-full h-96 max-w-6xl mx-auto lg:h-[500px] border-gray-500 dark:border transition-transform duration-500"
               />
             </SwiperSlide>
           ))}
