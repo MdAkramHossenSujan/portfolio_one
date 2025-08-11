@@ -59,7 +59,7 @@ const Contact = () => {
   };
   //Return the contact component
   return (
-    <div id="contact" className="py-10 flex items-center justify-center px-6 md:px-8">
+    <div id="contact" className="py-18 flex items-center justify-center px-6 md:px-8">
       <div className="grid md:grid-cols-2 gap-10 w-full max-w-[1540px]">
         {/* LEFT SIDE */}
         <motion.div
