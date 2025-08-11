@@ -82,53 +82,50 @@ const Banner = () => {
 
           {/* Download CV & Resume Button */}
           <div className='flex gap-4 justify-center lg:justify-start'>
-            <Link to={'https://drive.google.com/file/d/186B1AL6I4UIip16fd5a51-b4CXMxJg-Y/view?usp=sharing'} target='_blank'
-              className="
-                inline-block
-                px-8 py-3
-                rounded-full
-                text-cyan-900
-                bg-gradient-to-r
-                from-cyan-300
-                to-cyan-500
-                hover:from-cyan-300
-                hover:to-cyan-500
-                dark:text-white
-                dark:from-cyan-400
-                dark:to-cyan-600
-                dark:hover:from-cyan-500
-                dark:hover:to-cyan-700
-                font-semibold
-                transition-all
-                shadow-md
-                shadow-teal-200
-                dark:shadow-teal-400
-              "
+            <Link to={'https://drive.google.com/file/d/1B4jRdAr56wxwNGk8u2w_d_dwNZcg-mzI/view?usp=sharing'} target='_blank'
+             className="
+  inline-block
+  px-8 py-3
+  rounded-full
+  font-semibold
+  text-cyan-900
+  dark:text-white
+  bg-gradient-to-r
+  from-cyan-300 to-cyan-500
+  hover:from-cyan-400 hover:to-cyan-600
+  dark:from-cyan-400 dark:to-cyan-900
+  dark:hover:from-cyan-500 dark:hover:to-cyan-700
+  border border-cyan-600 dark:border-cyan-300
+  shadow-sm shadow-cyan-200 dark:shadow-cyan-800
+  hover:shadow-md hover:shadow-cyan-300
+  dark:hover:shadow-cyan-500
+  transition-all duration-300 ease-in-out
+  hover:scale-[1.03]
+"
+
             >
             Resume
             </Link>
             <Link to={'https://drive.google.com/file/d/17aVyHuwXBi7qdblK0DOiWtLsArob86v-/view?usp=sharing'} target='_blank'
-              className="
-                inline-block
-                px-8 py-3
-                rounded-full
-                text-cyan-900
-                bg-gradient-to-r
-                from-cyan-300
-                to-cyan-500
-                hover:from-cyan-300
-                hover:to-cyan-500
-                dark:text-white
-                dark:from-cyan-400
-                dark:to-cyan-600
-                dark:hover:from-cyan-500
-                dark:hover:to-cyan-700
-                font-semibold
-                transition-all
-                shadow-md
-                shadow-teal-200
-                dark:shadow-teal-400
-              "
+                         className="
+  inline-block
+  px-8 py-3
+  rounded-full
+  font-semibold
+  text-cyan-900
+  dark:text-white
+  bg-gradient-to-r
+  from-cyan-300 to-cyan-500
+  hover:from-cyan-400 hover:to-cyan-600
+  dark:from-cyan-400 dark:to-cyan-900
+  dark:hover:from-cyan-500 dark:hover:to-cyan-700
+  border border-cyan-600 dark:border-cyan-300
+  shadow-sm shadow-cyan-200 dark:shadow-cyan-800
+  hover:shadow-md hover:shadow-cyan-300
+  dark:hover:shadow-cyan-500
+  transition-all duration-300 ease-in-out
+  hover:scale-[1.03]
+"
             >
             CV
             </Link>

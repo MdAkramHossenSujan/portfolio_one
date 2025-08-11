@@ -36,7 +36,7 @@ const Education = () => {
           {educationData.map((edu, index) => (
             <div
               key={index}
-              className="flex flex-col items-center p-6 rounded-xl hover:shadow-lg transition duration-300"
+              className="flex flex-col items-center p-12 rounded-xl hover:shadow-lg transition duration-300"
             >
               {/* Circular Logo */}
               <div className="w-28 h-28 shadow-md shadow-cyan-300 dark:shadow-cyan-500 hover:shadow-md hover:scale-[1.02] rounded-full overflow-hidden border-4  text-cyan-600 dark:text-cyan-400">
